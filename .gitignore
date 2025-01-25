@@ -170,3 +170,4 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 data/dataset_for_ds_candidate.csv
+darts_logs/

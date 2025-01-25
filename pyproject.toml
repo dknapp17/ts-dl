@@ -6,10 +6,12 @@ authors = [
     {name = "David Knapp", email = "dsknapp17@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.9,<3.11"
 dependencies = [
     "darts (>=0.32.0,<0.33.0)",
-    "ipykernel (>=6.29.5,<7.0.0)"
+    "ipykernel (>=6.29.5,<7.0.0)",
+    "pydantic (>=2.0,<3.0)",
+    "ydata-profiling (>=4.12.2,<5.0.0)",
 ]
 
 [build-system]
