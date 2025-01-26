@@ -227,6 +227,30 @@ tests = ["cloudpickle", "hypothesis", "mypy (>=1.11.1)", "pympler", "pytest (>=4
 tests-mypy = ["mypy (>=1.11.1)", "pytest-mypy-plugins"]
 
 [[package]]
+name = "captum"
+version = "0.7.0"
+description = "Model interpretability for PyTorch"
+optional = false
+python-versions = ">=3.6"
+groups = ["main"]
+files = [
+    {file = "captum-0.7.0-py3-none-any.whl", hash = "sha256:2cbec9aa4b6ec325c2fdf369c1fdabb011017122e2314e2af009496d53a0757c"},
+    {file = "captum-0.7.0.tar.gz", hash = "sha256:7ca87d0dc67b3b7589a730b970b9536172a5468e0e31bf8657fdd73abc568a33"},
+]
+
+[package.dependencies]
+matplotlib = "*"
+numpy = "*"
+torch = ">=1.6"
+tqdm = "*"
+
+[package.extras]
+dev = ["annoy", "black (==22.3.0)", "flake8", "flask", "flask-compress", "ipython", "ipywidgets", "jupyter", "mypy (>=0.760)", "parameterized", "pytest", "pytest-cov", "scikit-learn", "sphinx", "sphinx-autodoc-typehints", "sphinxcontrib-katex", "ufmt", "usort (==1.0.2)"]
+insights = ["flask", "flask-compress", "ipython", "ipywidgets", "jupyter"]
+test = ["parameterized", "pytest", "pytest-cov"]
+tutorials = ["flask", "flask-compress", "ipython", "ipywidgets", "jupyter", "torchtext", "torchvision"]
+
+[[package]]
 name = "certifi"
 version = "2024.12.14"
 description = "Python package for providing Mozilla's CA Bundle."
@@ -4261,4 +4285,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.9,<3.11"
-content-hash = "5e328caab45892b043684975b6e0a1a7e1f55ba843183d33b5b21075844fb4f1"
+content-hash = "825d092615bdc75b6c4bf38732b8473fda64b30056ff0556a5637ba05a868a2e"
